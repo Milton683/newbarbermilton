@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservá tu turno - New Barber</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #111;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .info {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>New Barber</h1>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="date">Día del turno</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Hora del turno</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="service">Servicio</label>
+      <select name="service" id="service">
+        <option value="Corte">Corte - $5000</option>
+        <option value="Barba">Barba - $1000</option>
+        <option value="Cejas">Cejas - $500</option>
+      </select>
+
+      <button type="submit">Reservar turno</button>
+    </form>
+    <div class="info">
+      <p>Dirección: Niñas de Ayohuma 45</p>
+      <p>Horarios: Lun a Sáb 12 a 19 hs (Lunes y Viernes hasta 21 hs)</p>
+      <p>Tel: 2364 603666</p>
+      <p>Instagram: <a href="https://instagram.com/New_barberr" target="_blank">@New_barberr</a></p>
+    </div>
+  </div>
+</body>
+</html>
